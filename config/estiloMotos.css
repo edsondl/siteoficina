@@ -1,0 +1,66 @@
+body{
+	background: url(ha7.jpg) repeat-x;
+	font: 20px Arial, Helvetica, sans-serif;
+	border-top: 4px solid #e6e8fa;
+	border-left: 4px solid #e6e8fa;
+	border-right: 4px solid #d9d9f3;
+	border-bottom: 4px solid #d9d9f3;
+	color: gold;
+	width: 997px;
+	height: 800px;
+}
+
+#leo{
+	width: 997px;
+	text-align: center;
+}
+
+#menu {
+	float: left;
+	width: 230px;
+	font: 15px Arial, Helvetica, sans-serif;
+	padding: 1px 0px 0px 0px;
+}
+
+#motos1{
+	float: left;
+	width: 230px;
+	font: 15px Arial, Helvetica, sans-serif;
+}
+
+#motos2{
+	float: left;
+	width: 300px;
+	height: 220px;
+	color: red;
+	font: bold 25px Arial, Helvetica, sans-serif;
+}
+
+#motos3{
+	float: left;
+	width: 300px;
+	height: 220px;
+	color: yellow;
+	font: bold 18px Arial, Helvetica, sans-serif;
+}
+
+h1{
+	color: gold;
+	font: 100px Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: yellow;
+	font: 50px Arial, Helvetica, sans-serif;
+}
+
+h3{
+	color: yellow;
+	font: 25px bold Arial, Helvetica, sans-serif;
+}
+
+h4{
+	color: blue;
+	font: 10px Arial, Helvetica, sans-serif;
+}
+

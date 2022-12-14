@@ -1,0 +1,152 @@
+<%-- 
+    Document   : projeto5a
+    Created on : 08/08/2012, 21:31:48
+    Author     : edson
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.ServicoDAO"%>
+<%@page import="modelo.Servico"%>
+<%@page import="conexao.ConexaoUtil"%>                   <!-- conecta o banco de dados -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Seleciona serviços</title>
+        <link rel ="stylesheet" href="config/projeto3Mod.css" type="text/css"/>
+
+        <script type="text/javascript">
+            function buscar() {
+                var form = document.getElementById("formBuscar");
+                form.action="projeto5a.jsp";
+                form.submit();
+            }
+			
+            function carregar(codigo) {
+                var form = document.getElementById("formBuscar");
+                form.action="projeto5a.jsp";
+                form.codigo.value=codigo;
+                form.submit();
+            }
+        </script>
+
+        
+    </head>
+    <body>
+        <div id="conteiner">
+
+
+
+
+            <div id="leo">	      
+                <a href="pagina_inicial.jsp"><img src="imagens/logo.png" width="990" height="250" alt="Home" title="Clique aqui e volte ao menu inicial do site!!!"> </a>  
+            </div> <!-- Fecha div leo -->
+
+
+
+
+
+
+
+
+            <div id="barra_menu">
+
+
+                <div id="itens">
+                    <li><a href="projeto5a.jsp" alt="serviços" title="Clique aqui e conheça nossos serviços!!!"><img src="imagens/SERVICOS.png"> </a></li>
+                </div><!--fecha div itens-->
+
+
+
+                <div id="itens">					
+                    <li><a href="projeto7a.jsp" alt="acessórios" title="Clique aqui e conheça nossos acessórios!!!"><img src="imagens/ACESSORIOS.png"></a></li>
+                </div>
+
+
+                <div id="itens">
+
+                    <li><a href="projeto6a.jsp" alt="peças" title="Clique aqui e conheça nosso conjunto de peças de reposição!!!"><img src="imagens/PECAS.png"></a></li>
+                </div>
+
+                <div id="itens">	
+
+                    <li><a href="projeto4a.jsp" alt="contato" title="Clique aqui e entre em contato conosco!!!"><img src="imagens/CONTATO.png"></a></li>
+
+
+                </div>
+
+
+                <div id="itens">
+
+                    <li> <a href="index.jsp" alt="Área Privativa" title="Área privativa"><img src="imagens/admin.png" width="177" height="50"></a></li>
+
+                </div>
+
+            </div>
+        </ul>
+
+        <div id="esquerdo_geral">
+            <ul> 
+                <li><%
+                    request.setCharacterEncoding("UTF-8");
+
+                    
+
+                    String nomeBuscar = request.getParameter("nomeBuscar");
+                    if (nomeBuscar == null) {
+                        nomeBuscar = "";
+                    }
+
+                    ServicoDAO servicoDAO = new ServicoDAO();
+                    ArrayList<Servico> servicos = servicoDAO.buscar(nomeBuscar);
+                    %>
+                
+                    <h3>Procurar Serviço</h3>
+                    <form id="formBuscar" method="post">
+                        <!-- campo código refere-se a acessóorio selecionado -->
+                        <input type="hidden" name="codigo"/>
+                        <input type="hidden" name="comando" value="carregar" />
+
+                        Nome: <input type="text" name="nomeBuscar" value="<%= nomeBuscar%>"/> <input type="submit" value="Buscar"/> <br/>
+                        
+                        <%
+                            for (int i = 0; i < servicos.size(); i++) {
+                                Servico d = servicos.get(i);
+                        %>
+                        <li><div id='produto1'>
+                                <div id='titu'><input type="button" value="<%= d.getNome()%>"></a></div>
+
+                                <div id='interna'>
+
+
+                                    <div id='stitu'><%= d.getDetalhes()%></div>	
+
+                                    <br><font color='#FF0000'>R$ <%= d.getPreco()%></font>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <%
+                            }
+                        %>
+
+                    </form>					
+
+                    </li> 
+
+
+            </ul>
+
+
+        </div>
+
+
+        <div id="rodape"><img src="imagens/rodape.png" width="997" height="184"></div>
+    </div>
+
+</body>
+</html>

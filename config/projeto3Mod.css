@@ -1,0 +1,189 @@
+body{
+
+background:url(../imagens/background.png);
+}
+
+#conteiner{
+	width: 997px; 
+	height:auto;
+	background:url(../admin/fotos/back.png);
+	border: 1px black solid;
+	margin:0px 0px 0px 60px;
+}
+
+#rodape{
+	margin: 0px 0px 0px 0px;
+	text-align:left;
+}
+
+#leo{
+	
+	text-align:center;
+	
+
+	height:250px;
+	
+}
+#bara_loguin{
+	text-align:center;
+	height:auto;
+	color:#00F;
+	
+}
+#centro{
+	height:100%;
+	
+	
+}
+#interna2{
+	border:#000 1px solid;
+	height:160px;
+	text-align:center;
+	margin:2px;
+}
+
+#itens{
+	
+	color:#0F0;
+	float:left;
+
+	color:#FFF;
+	
+}
+#centro2{
+	width: 300px;
+	height: 300px;
+	float:left;
+	
+
+	
+	
+}
+#titulo{
+	width:200px;
+	float:left;
+	
+}
+	
+}
+
+#central{
+	width:997px;
+	border:3px solid #000;
+	margin:0px 0px 0px 20px;
+	
+	
+}
+#menu_adm{
+	border:#000 1px dashed;
+}
+#titu{
+	border:#000 dashed 1px;
+	height:20px;
+	font-size:15px;
+	text-align:center;
+}
+#esquerdo_geral li{
+	float:left;
+}
+#esquerdo_geral{
+	border:1px dashed #000;	
+	width:997px;	
+}
+#produto1{
+	font-size:20px;
+	text-align:justify;
+	margin:10px 10px 10px 10px;
+	border:1px dashed #000;	
+	width:900px;
+	height:210px;
+}
+#produto2{
+		margin:10px 10px 10px 10px;
+	border:1px dashed #000;	
+	width:120px;
+	height:210px;
+	text-align:center;
+}
+li{
+	list-style:none;
+}
+
+#barra_menu {
+	border:#000 1px solid;
+	height:50;
+	width: 996px;
+	text-align:center;	
+	background:#FF9;
+	
+}
+
+#fotos{
+	border:1px solid black;
+	margin-left:6px;
+	margin-top:8px;
+	width:100px;
+	
+}
+#info{
+	float:left;
+	width:400px;
+}
+#lateral{
+	border:solid 1px #000;
+	float:left;
+	width:200px;
+	
+}
+
+#motos1{
+	
+	
+	width: 300px;
+	height: auto;
+	color: red;
+	float: left;
+	margin: 0px 0px 0px 20px;
+
+	font: bold 25px Arial, Helvetica, sans-serif;
+}
+
+#motos2{
+	width: 300px;
+	height: 200px;
+	margin: 0px 0px 0px 20px;
+	float: left;
+
+	color: red;
+	font: 20px Arial, Helvetica, sans-serif;
+}
+
+#motos3{
+	float: left;
+	width: 300px;
+	height: 220px;
+	color: yellow;
+	font: bold 18px Arial, Helvetica, sans-serif;
+}
+
+h1{
+	color: gold;
+	font: 100px Arial, Helvetica, sans-serif;
+}
+
+h2{
+	
+	
+	font: 30px Arial, Helvetica, sans-serif;
+}
+
+h3{
+	color: blue;
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+h4{
+	color: blue;
+	font: 10px Arial, Helvetica, sans-serif;
+}
+

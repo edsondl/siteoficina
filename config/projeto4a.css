@@ -1,0 +1,81 @@
+
+#todoform{
+	background-image: url(ha7.jpg);
+	font: 16px Arial, Helvetica, sans-serif;
+	border-top: 2px solid yellow;
+	border-left: 2px solid yellow;
+	border-right: 2px solid yellow;
+	border-bottom: 2px solid yellow;
+	color: gold;
+}
+#esquerdo_geral{
+	width:448.5px;	
+}
+
+h1{
+	color: gold;
+	font: 25px Arial, Helvetica, sans-serif;
+}
+
+h2{
+	color: gold;
+	font: 18px Arial, Helvetica, sans-serif;
+}
+
+h3{
+	color: gold;
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+h4{
+	color: blue;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+
+
+
+form{
+	background-color: cyan;
+
+}
+
+
+th{
+	background-color: cyan;
+
+	font: 15px  Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid yellow;
+}
+
+td{
+	padding: 3px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: gold;
+}
+
+
+input{
+	background-color: cyan;
+	border: 1px dashed blue;
+	font: gold;
+}
+
+textarea{
+	background-color: cyan;
+	border: 1px dashed yellow;
+	font: gold;
+}
+
+input.botao{
+	background-color: cyan;
+	color: blue;
+	border: 2px solid yellow;
+}
+
+select{
+	background-color: cyan;
+	color: blue;
+	border: 2px solid yellow;
+}
+	
